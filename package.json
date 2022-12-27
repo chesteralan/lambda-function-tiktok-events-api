@@ -1,0 +1,27 @@
+{
+  "name": "lambda-function-tiktok-events-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && sam local invoke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chesteralan/lambda-function-tiktok-events-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chesteralan/lambda-function-tiktok-events-api/issues"
+  },
+  "homepage": "https://github.com/chesteralan/lambda-function-tiktok-events-api#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  }
+}
