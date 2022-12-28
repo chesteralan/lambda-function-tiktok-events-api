@@ -34,7 +34,7 @@ export const lambdaHandler:Handler = async (event:any, context:Context): Promise
     event: tiktokEventName,
     event_id: `${randomEventId}_123`,
     timestamp,
-    test_event_code: "TEST78246",
+    //test_event_code: "TEST78246",
     context: tiktokContext
   }
 

@@ -15,7 +15,14 @@
     "invoke8": "sam local invoke -e events/AddToWishlist.json",
     "invoke9": "sam local invoke -e events/Search.json",
     "invoke10": "sam local invoke -e events/ClickButton.json",
-    "test": "yarn build && yarn invoke1 && yarn invoke2 && yarn invoke3 && yarn invoke4 && yarn invoke5 && yarn invoke6 && yarn invoke7 && yarn invoke8 && yarn invoke9 && yarn invoke10"
+    "invoke11": "sam local invoke -e events/ViewContent.json",
+    "invoke12": "sam local invoke -e events/AddToCart.json",
+    "invoke13": "sam local invoke -e events/CompletePayment.json",
+    "invoke14": "sam local invoke -e events/PlaceAnOrder.json",
+    "test1": "yarn invoke1 && yarn invoke2 && yarn invoke3 && yarn invoke4 && yarn invoke5",
+    "test2": "yarn invoke6 && yarn invoke7 && yarn invoke8 && yarn invoke9 && yarn invoke10",
+    "test3": "yarn invoke11 && yarn invoke12 && yarn invoke13 && yarn invoke14",
+    "test": "yarn build && yarn test1 && yarn test2 && yarn test3"
   },
   "repository": {
     "type": "git",
