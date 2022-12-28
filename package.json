@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && sam local invoke"
+    "build": "tsc",
+    "invoke1": "sam local invoke -e events/AddPaymentInfo.json",
+    "invoke2": "sam local invoke -e events/InitiateCheckout.json",
+    "invoke3": "sam local invoke -e events/CompleteRegistration.json",
+    "invoke4": "sam local invoke -e events/Subscribe.json",
+    "invoke5": "sam local invoke -e events/Contact.json",
+    "invoke6": "sam local invoke -e events/SubmitForm.json",
+    "invoke7": "sam local invoke -e events/Download.json",
+    "invoke8": "sam local invoke -e events/AddToWishlist.json",
+    "invoke9": "sam local invoke -e events/Search.json",
+    "invoke10": "sam local invoke -e events/ClickButton.json",
+    "test": "yarn build && yarn invoke1 && yarn invoke2 && yarn invoke3 && yarn invoke4 && yarn invoke5 && yarn invoke6 && yarn invoke7 && yarn invoke8 && yarn invoke9 && yarn invoke10"
   },
   "repository": {
     "type": "git",
@@ -19,9 +29,12 @@
   "homepage": "https://github.com/chesteralan/lambda-function-tiktok-events-api#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.109",
+    "@types/node": "^18.11.18",
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "aws-lambda": "^1.0.7"
+    "aws-lambda": "^1.0.7",
+    "axios": "^1.2.1",
+    "dotenv": "^16.0.3"
   }
 }
